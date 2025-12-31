@@ -209,9 +209,6 @@ footer{
 <footer>
   © 2025 EBASS GROUP — All Rights Reserved
 
-
-<head>
-  <title>Untitled</title>
 </head>
 
 <body>
