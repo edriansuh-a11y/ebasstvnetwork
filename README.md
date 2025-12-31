@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -208,13 +208,7 @@ footer{
 
 <footer>
   © 2025 EBASS GROUP — All Rights Reserved
-</footer>
 
-</body>
-</html>
-!DOCTYPE HTML>
-
-<html>
 
 <head>
   <title>Untitled</title>
