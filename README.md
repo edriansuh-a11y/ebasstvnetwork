@@ -1,8 +1,10 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>ABAKWA <a href="http://ebasstvnetworkapp"><img src="" alt=""></a>TV NETWORK</title>
+
+<title>ABAKWA TV NETWORK</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -30,66 +32,80 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:18px 50px;
+  padding:15px 20px;
   background:rgba(0,0,0,0.85);
+  flex-wrap:wrap;
 }
 
 .logo{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:10px;
 }
 
 .logo-icon{
-  width:34px;
-  height:34px;
+  width:32px;
+  height:32px;
   border-radius:50%;
   background:linear-gradient(135deg,var(--gold),#c98a00);
 }
 
 .logo strong{color:var(--gold);}
-.logo small{display:block;font-size:10px;opacity:.7}
+.logo small{
+  display:block;
+  font-size:10px;
+  opacity:.7;
+}
+
+nav{
+  width:100%;
+  margin-top:10px;
+  display:flex;
+  justify-content:space-between;
+  overflow-x:auto;
+}
 
 nav a{
-  margin-left:25px;
   color:#ccc;
   text-decoration:none;
-  cursor:pointer;
+  font-size:14px;
+  white-space:nowrap;
 }
 nav a.active{color:var(--gold);}
 
 /* HERO */
 .hero{
-  height:78vh;
+  min-height:65vh;
   background:
     linear-gradient(to right,rgba(0,0,0,.9),rgba(0,0,0,.2)),
     url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1600&q=80");
   background-size:cover;
   background-position:center;
-  padding:80px;
+  padding:40px 20px;
 }
 
 .live{
   background:var(--red);
-  padding:6px 14px;
+  padding:6px 12px;
   font-weight:bold;
+  display:inline-block;
 }
 
 .hero h1{
-  font-size:56px;
-  margin-top:20px;
+  font-size:34px;
+  margin-top:15px;
 }
 .hero h1 span{color:var(--gold);}
 
 .hero p{
-  margin-top:12px;
-  font-size:18px;
+  margin-top:10px;
+  font-size:15px;
 }
 
 .watch{
-  margin-top:25px;
-  padding:15px 34px;
-  font-size:16px;
+  margin-top:20px;
+  padding:12px 28px;
+  font-size:15px;
   border:none;
   background:linear-gradient(135deg,#e00,#900);
   color:#fff;
@@ -98,49 +114,57 @@ nav a.active{color:var(--gold);}
 }
 
 /* CONTENT */
-.content{padding:40px 50px;}
-.content h2{margin:30px 0 15px;}
+.content{
+  padding:25px 20px;
+}
+
+.content h2{
+  margin:25px 0 12px;
+  font-size:18px;
+}
 
 .row{
   display:flex;
-  gap:20px;
+  gap:15px;
   overflow-x:auto;
+  padding-bottom:10px;
 }
 
 .card{
-  min-width:240px;
-  height:135px;
+  min-width:200px;
+  height:120px;
   background:var(--card);
   border-radius:14px;
   display:flex;
   align-items:flex-end;
-  padding:16px;
+  padding:14px;
+  font-size:14px;
   font-weight:600;
-  transition:.3s;
 }
-.card:hover{transform:scale(1.08);}
 
 /* CHANNELS */
 .channels{
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  padding:35px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+  padding:25px 20px;
 }
 
 .channel{
   background:linear-gradient(135deg,var(--gold),#c98a00);
-  padding:14px 30px;
+  padding:12px;
   border-radius:10px;
   font-weight:bold;
+  text-align:center;
   color:#000;
+  font-size:14px;
 }
 
 /* FOOTER */
 footer{
   text-align:center;
-  padding:20px;
-  font-size:14px;
+  padding:18px;
+  font-size:13px;
   opacity:.7;
 }
 </style>
@@ -159,7 +183,7 @@ footer{
 
   <nav>
     <a class="active">Home</a>
-    <a>Live TV</a>
+    <a>Live</a>
     <a>Movies</a>
     <a>Series</a>
     <a>News</a>
@@ -167,7 +191,7 @@ footer{
 </header>
 
 <section class="hero">
-  <span class="live">LIVE NOW:</span>
+  <span class="live">LIVE NOW</span>
   <h1>Entertainment <span>Tonight</span></h1>
   <p>Celebrity News & Gossip – Watch Now!</p>
   <button class="watch">▶ WATCH LIVE</button>
@@ -208,11 +232,7 @@ footer{
 
 <footer>
   © 2025 EBASS GROUP — All Rights Reserved
-
-</head>
-
-<body>
+</footer>
 
 </body>
-
 </html>
